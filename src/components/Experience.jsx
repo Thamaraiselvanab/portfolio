@@ -10,7 +10,7 @@ const timelineData = [
   {
     title: 'Education',
     subtitle: "UG - Bachelor's Degree in Electronic and Instrumentation Engineering",
-    company: 'Kumaraguru College of Technology',
+    company: 'Kumaraguru College of Technology,Coimbatore',
     university: 'Anna University',
     date: 'Graduated: 2025',
   },
