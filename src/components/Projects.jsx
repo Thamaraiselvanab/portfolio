@@ -20,11 +20,11 @@ const GithubIcon = ({ size = 20 }) => (
 const projects = [
   {
     title: "Portfolio Website",
-    description: "Architected and developed a high-end portfolio using React and Vite. Implemented responsive design patterns, glassmorphic UI modules, and optimized animations. Focused on performance, modern CSS architecture, and clean component modularity.",
-    tech: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+    description: "Built and deployed a React (Vite) Portfolio web application on AWS EC2 using Nginx, with a fully automated CI/CD pipeline via GitHub Actions. Configured custom domain, HTTPS (Certbot), and Elastic IP for secure and reliable hosting. Implemented SSH key-based access and Linux server management for production-style deployment.",
+    tech: ["React", "Vite", "Tailwind CSS", "AWS EC2", "Nginx", "GitHub Actions"],
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2426",
-    live: "#",
-    github: "#"
+    live: "https://thamaraiselvan.in",
+    github: "https://github.com/Thamaraiselvanab/portfolio"
   },
   {
     title: "Food Delivery Application",
@@ -105,6 +105,8 @@ const Projects = () => {
                 <div className="flex items-center gap-6 pt-3 border-t border-white/5">
                   <a 
                     href={project.live} 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 text-xs font-medium text-primary hover:text-accent transition-colors group/link"
                   >
                     <ExternalLink size={14} />
@@ -113,6 +115,8 @@ const Projects = () => {
                   </a>
                   <a 
                     href={project.github} 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 text-xs font-medium text-slate-400 hover:text-white transition-colors group/link"
                   >
                     <GithubIcon size={14} />

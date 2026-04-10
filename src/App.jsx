@@ -4,6 +4,7 @@ import Projects from './components/Projects.jsx'
 import Experience from './components/Experience.jsx'
 import Skills from './components/Skills.jsx'
 import Contact from './components/Contact.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Contact />
         {/* All other sections will follow */}
       </main>
+      
+      <Footer />
     </div>
   )
 }
